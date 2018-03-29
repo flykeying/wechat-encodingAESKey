@@ -10,7 +10,7 @@ npm install wechat-encodingaeskey --save
 
 
 ```javascript
- var WXCrypto = require('wechat-encodingAESKey');
+ var WXCrypto = require('wechat-encodingaeskey');
  var wx = new WXCrypto(token, aesKey, appid);
  var encryptedXML = wx.encrypt(需要加密的字段, timestamp, nonce); // 加密 输出是字符串
  var decryptedXML = wx.decrypt(signature, timestamp, nonce, 加密的字符串); //解密 输出是xml
